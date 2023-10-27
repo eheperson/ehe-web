@@ -1,0 +1,8 @@
+{{define "content"}}
+<h1>About Page</h1>
+
+<!-- htmx example -->
+<button hx-get="/about/data" hx-target="#aboutData" hx-indicator="#loading">Fetch Data</button>
+<div id="aboutData"></div>
+<div id="loading" style="display:none">Loading...</div>
+{{end}}
